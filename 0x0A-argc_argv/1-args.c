@@ -3,10 +3,12 @@
  * main - prints program's name
  * Return: (0) for success
  * @argc: argument count
- * @argv: argument vector
+ * @argv: array of arguments
 */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	(void) argv; /*Ignore argv*/
+	printf("%d\n", argc-1);
+
 	return (0);
 }
