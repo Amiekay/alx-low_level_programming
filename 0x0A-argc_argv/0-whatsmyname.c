@@ -5,7 +5,7 @@
  * @argc: argument count
  * @argv: one-dimensional array of strings
 */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	printf("The program's name is %s\n", argv[0]);
 	return (0);
